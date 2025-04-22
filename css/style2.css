@@ -1,0 +1,295 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+   
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #007bff;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color:#007bff;
+    border-right: 1px solid #ddd;
+    padding: 40px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+    color: #f5f1f1;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 2 px;
+    background-color: #007bff;
+    margin: 20px 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 7px    ;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    /* background-color: #f0f0f0; */
+    color: #007bff; /* Match the logo's color */
+    background-color: #e3f2fd;
+}
+.footer {
+   color: #ffffff;
+   margin-top: 70px;
+   padding: 10px;
+   text-align: center;
+}
+
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fffdd0;
+}
+
+/* Header */
+.main-content header h1 {
+    font-size: 28px;
+    color: #555;
+    margin-bottom: 20px;
+    text-decoration: dotted;
+}
+
+/* Best-Selling Items Section */
+.best-selling {
+    background-color: #fffefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(12, 90, 235, 0.897);
+}
+
+.best-selling h2 {
+    display: flex; /* Align items in a row */
+    justify-content: left; /* Center the items */
+    gap: 20px; /* Add space between items */
+    padding: 20px; /* Add padding */
+}
+
+.items {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.items img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.image:hover{
+    filter: brightness(0.8);
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 12px rgb(48, 99, 209);
+}
+.name{
+    font-size: 16px;
+    margin-top: 8px; /* Space between image and text */
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold text */
+
+}
+.button {
+    text-decoration: none;
+    background-color:#fffdd0; 
+    color: rgb(14, 13, 13);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.button:hover {
+    background-color: #d13030; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 8px 12px rgba(233, 12, 12, 0.712); /* Stronger shadow */
+}
+/* Icons Styling */
+.button i {
+    font-size: 18px; /* Icon size */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust spacing as needed */
+}
+/* Header buttons */
+.header-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Space between the buttons */
+    padding: 10px; /* Add padding around buttons */
+}
+
+/* Individual button styles */
+.signup, .login {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup {
+    background-color: #4CAF50; /* Green for Signup */
+}
+
+.signup:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.login {
+    background-color: #008CBA; /* Blue for Login */
+}
+
+.login:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details p {
+    margin: 0;
+    font-size: 14px;
+}
+#profileBox {
+    display: none; /* hidden by default */
+    align-items: center;
+    gap: 10px;
+}
+
+#user-actions {
+    display: flex; /* visible by default */
+    gap: 10px;
+}
+
+.logout-btn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.main-con {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Adds space between the boxes */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Optional: Adds space between the boxes */
+    margin: 20px; /* Optional: Adds margin around the container */
+    box-shadow: 0 4px 8px rgba(12, 90, 235, 0.897);
+    margin-top: 7%;
+
+}
+
+/* Styles for each box */
+.previous {
+    width: 45%; /* Adjust as needed to control box width */
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fffefe;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Style the sales and profit sections differently */
+.sales, .profit {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .login {
+        width: 90%;
+    }
+}
+
+

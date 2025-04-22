@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no scrollbars on the viewport */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Center the body content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../Assests/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Login box styles */
+.login {
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(111, 40, 6, 0.8);
+    overflow: hidden;
+}
+
+/* Title inside login box */
+.loginmain {
+    font-size: 40px;
+    text-align: center;
+    color: #fcfcfc;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-box input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    font-size: 17px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.input-box input:focus {
+    border-color: #4caf50; /* Green border */
+    box-shadow: 0px 0px 5px #4caf50;
+}
+
+
+/* Forgot password link */
+.remember-forgot {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+.btn button {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Profile section styling */
+.profile {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    border: 2px solid rgba(111, 40, 6, 0.8);
+    width: 400px;
+    max-width: 90%;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.profile h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.profile .btn {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .login {
+        width: 90%;
+    }
+}
+
+

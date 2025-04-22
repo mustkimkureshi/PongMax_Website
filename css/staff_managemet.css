@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+   
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #007bff;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    backgroubody {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .dashboard {
+        display: flex;
+        width: 100%;
+    }
+    
+    .sidebar {
+        width: 250px;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .sidebar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .sidebar nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .sidebar nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .sidebar nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        background-color: #444;
+        border-radius: 5px;
+    }
+    
+    .sidebar nav ul li a:hover {
+        background-color: #555;
+    }
+    
+    .sidebar .footer {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+    }
+    
+    .main-content header {
+        margin-bottom: 20px;
+    }
+    
+    .main-content .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .main-content .content > div {
+        flex: 1;
+        min-width: 300px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .main-content .content h2 {
+        margin-top: 0;
+    }
+    
+    .main-content .content form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-content .content form label {
+        margin-bottom: 5px;
+    }
+    
+    .main-content .content form input,
+    .main-content .content form select,
+    .main-content .content form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .main-content .content form button {
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .main-content .content form button:hover {
+        background-color: #555;
+    }nd-color:#007bff;
+    border-right: 1px solid #ddd;
+    padding: 40px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+    color: #f5f1f1;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 2 px;
+    background-color: #007bff;
+    margin: 20px 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 7px    ;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    /* background-color: #f0f0f0; */
+    color: #007bff; /* Match the logo's color */
+    background-color: #e3f2fd;
+}
+
+.sidebar .footer {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px; /* Match dashboard2 padding */
+    background-color: #ecf0f1; /* Match dashboard2 main content background */
+}
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+.main-content .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-content .content > div {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .content h2 {
+    margin-top: 0;
+}
+
+.main-content .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .content form label {
+    margin-bottom: 5px;
+}
+
+.main-content .content form input,
+.main-content .content form select,
+.main-content .content form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.main-content .content form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content .content form button:hover {
+    background-color: #555;
+}

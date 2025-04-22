@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* QR Code Styles */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.qr-code-container p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
