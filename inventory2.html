@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Inventory Management</title>
+    <link rel="stylesheet" href="css/inv.css">
+</head>
+<body>
+    <div class="dashboard"> 
+        <!-- Horizontal Navigation Bar -->
+                <div class="navbar">
+                    <div class="logo">CafeERP</div>
+                    <ul>
+                        <li><a href="dashboard2.html" class="button">Home</a></li>
+                        <li><a href="inventory2.html" class="button">Inventory Management</a></li>
+                        <li><a href="order.html" class="button">Order Management</a></li>
+                        <li><a href="staff_management.html" class="button">Staff Management</a></li>
+                        <li><a href="billing.html" class="button">Billing & Payment</a></li>
+                        <li><a href="crm.html" class="button">Customer CRM</a></li>
+                        <li><a href="contactus.html" class="button">Contact us</a></li>
+                    </ul>
+                </div>
+
+        <main class="main-content">
+            <header>
+                <h1>Inventory Management</h1>
+            </header>
+
+            <div class="container">
+                <div class="inventory-form">
+                    <h2>Add New Item</h2>
+                    <form id="add-item-form">
+                        <div class="form-group">
+                            <label for="itemId">Item Id</label>
+                            <input type="text" id="itemId" name="itemId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemName">Item Name</label>
+                            <input type="text" id="itemName" name="itemName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" name="category">
+                                <option value="beverages">Beverages</option>
+                                <option value="food">Food</option>
+                                <option value="supplies">Supplies</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" name="quantity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="minQuantity">Minimum Quantity</label>
+                            <input type="number" id="minQuantity" name="minQuantity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="itemImage">Item Image</label>
+                            <input type="file" id="itemImage" name="itemImage" accept="image/*" required>
+                        </div>
+
+                        <button type="submit">Add Item</button>
+                    </form>
+                </div>
+
+                <button id="show-inventory-btn">Show Inventory</button>
+            </div>
+        </main>    
+    </div>
+    <script src="js/inventory.js"></script>
+</body>
+</html>

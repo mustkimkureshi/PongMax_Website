@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Management</title>
+    <link rel="stylesheet" href="css/staff.css">
+</head>
+<body>
+    <div class="dashboard">     
+        <!-- Horizontal Navigation Bar -->
+		<div class="navbar">
+			<div class="logo">CafeERP</div>
+			<ul>
+					<li><a href="dashboard2.html" class="button">Home</a></li>
+                    <li><a href="inventory2.html" class="button">Inventory Management</a></li>
+                    <li><a href="order.html" class="button">Order Management</a></li>
+                    <li><a href="staff_management.html" class="button">Staff Management</a></li>
+                    <li><a href="billing.html" class="button">Billing & Payment</a></li>
+                    <li><a href="crm.html" class="button">Customer CRM</a></li>
+                    <li><a href="contactus.html" class="button">Contact us</a></li>
+			</ul>
+		</div>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Staff Management</h1>
+            </header>
+            <section class="content">
+                <div class="staff-form">
+                    <h2>Add Staff Member</h2>
+                    <form id="staff-form" method="POST" action="php/add_staff.php">
+                        <label for="staff-name">Staff Name:</label>
+                        <input type="text" id="staff-name" name="staff-name" placeholder="Enter staff name" required>
+                        <button type="submit">Add Staff</button>
+                    </form>
+                </div>
+
+                <div class="attendance">
+                    <h2>Mark Attendance</h2>
+                    <form id="attendance-form" method="POST" action="php/mark_attendance.php">
+                        <label for="attendance-date">Date:</label>
+                        <input type="date" id="attendance-date" name="date" required>
+                        <div id="attendance-staff-list">
+                            <!-- Staff members will be dynamically loaded here for attendance -->
+                        </div>
+                        <button type="submit">Submit Attendance</button>
+                    </form>
+                </div>
+
+                <div class="leave-management">
+                    <h2>Manage Leave</h2>
+                    <form id="leave-form" action="php/apply_leave.php" method="POST">
+                        <label for="leave-staff-name">Staff Name:</label>
+                        <select id="leave-staff-name" name="staff_id" required>
+
+                    
+                        <label for="leave-start-date">Start Date:</label>
+                        <input type="date" id="leave-start-date" name="start_date" required>
+                    
+                        <label for="leave-end-date">End Date:</label>
+                        <input type="date" id="leave-end-date" name="end_date" required>
+                    
+                        <button type="submit">Apply Leave</button>
+                    </form>
+                    <div id="leave-list">
+                        <!-- Leave records will be displayed here -->
+                    </div>
+                </div>
+
+                <div class="payroll-management">
+                    <h2>Manage Payroll</h2>
+                    <form id="payroll-form" method="post"  action="php/process_payroll.php">    
+                        <label for="payroll-staff-name">Staff Name:</label>
+                        <select id="payroll-staff-name" name="payroll-staff-name" required>
+                            <!-- Staff members will be dynamically loaded here for payroll management -->
+                        </select>
+                        <label for="payroll-amount">Amount:</label>
+                        <input type="number" id="payroll-amount" name="payroll-amount" required>
+                        <button type="submit">Process Payroll</button>
+                    </form>
+                    <div id="payroll-list">
+                        <!-- Payroll records will be displayed here -->
+                    </div>
+                </div>
+                <div class="view-attendance">
+                    <h2>View Attendance Records</h2>
+                    <a href="view_attendance.html"><button id="view-attendance-button">View Attendance</button></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/staff_management.js"></script>
+</body>
+</html>

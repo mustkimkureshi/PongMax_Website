@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Payment</title>
+    <link rel="stylesheet" href="css/billing.css    ">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Horizontal Navigation Bar -->
+		<div class="navbar">
+			<div class="logo">CafeERP</div>
+			<ul>
+					<li><a href="dashboard2.html" class="button">Home</a></li>
+                    <li><a href="inventory2.html" class="button">Inventory Management</a></li>
+                    <li><a href="order.html" class="button">Order Management</a></li>
+                    <li><a href="staff_management.html" class="button">Staff Management</a></li>
+                    <li><a href="billing.html" class="button">Billing & Payment</a></li>
+                    <li><a href="crm.html" class="button">Customer CRM</a></li>
+                    <li><a href="contactus.html" class="button">Contact us</a></li>
+			</ul>
+		</div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Billing & Payment</h1>
+            </header>
+            <section class="content">
+                <div class="billing">
+                    <h2>Generate Invoice</h2>
+                    <form id="billing-form">
+                        <label for="customer-name">Customer Name:</label>
+                        <input type="text" id="customer-name" name="customer-name" readonly>
+
+                        <label for="order-items">Order Items:</label>
+                        <textarea id="order-items" name="order-items" readonly></textarea>
+
+                        <label for="total-amount">Total Amount:</label>
+                        <input type="text" id="total-amount" name="total-amount" readonly>
+
+                        <button type="submit" id="generate-invoice">Generate Invoice</button>
+                    </form>
+                </div>
+                <div id="invoice-preview" class="invoice-box" style="display: none;">
+                    <h2>Invoice Preview</h2>
+                    <p><strong>Customer:</strong> <span id="preview-customer"></span></p>
+                    <p><strong>Items:</strong></p>
+                    <ul id="preview-items"></ul>
+                    <p><strong>Total:</strong> ₹<span id="preview-total"></span></p>
+                    <button onclick="window.print()">🖨️ Print Invoice</button>
+                </div>
+                <div class="previous-transactions">
+                    <h2>Previous Transactions</h2>
+                    <button id="show-transactions">Show Previous Transactions</button>
+                    <div id="transactions-list">
+                        <!-- Previous transactions will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/billing.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="navbar">
+			<div class="logo">CafeERP</div>
+			<ul>
+					<li><a href="dashboard2.html" class="button">Home</a></li>
+                    <li><a href="inventory2.html" class="button">Inventory Management</a></li>
+                    <li><a href="order.html" class="button">Order Management</a></li>
+                    <li><a href="staff_management.html" class="button">Staff Management</a></li>
+                    <li><a href="billing.html" class="button">Billing & Payment</a></li>
+                    <li><a href="crm.html" class="button">Customer CRM</a></li>
+                    <li><a href="contactus.html" class="button">Contact us</a></li>
+			</ul>
+		</div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Order Management</h1>
+            </header>
+            <section class="content">
+                <div class="menu">
+                    <h2>Menu</h2>
+                    <div class="items">
+                        <div class="item" data-name="Pizza" data-options='["Margherita", "Cheese", "Onion", "Corn"]' data-price='{"Margherita": 200, "Cheese": 250, "Onion": 220, "Corn": 230}'>
+                            <img src="Assests/pizza.jpeg" alt="Pizza" class="image">
+                            <p class="name">Pizza</p>
+                            <select class="item-options">
+                                <option value="Margherita">Margherita - 200 INR</option>
+                                <option value="Cheese">Cheese - 250 INR</option>
+                                <option value="Onion">Onion - 220 INR</option>
+                                <option value="Corn">Corn - 230 INR</option>
+                            </select>
+                            <button class="add-to-order">Add to Order</button>
+                        </div>
+                        <div class="item" data-name="Burger" data-options='["Veg", "Chicken", "Cheese"]' data-price='{"Veg": 150, "Chicken": 200, "Cheese": 180}'>
+                            <img src="Assests/burger.jpeg" alt="Burger" class="image">
+                            <p class="name">Burger</p>
+                            <select class="item-options">
+                                <option value="Veg">Veg - 150 INR</option>
+                                <option value="Chicken">Chicken - 200 INR</option>
+                                <option value="Cheese">Cheese - 180 INR</option>
+                            </select>
+                            <button class="add-to-order">Add to Order</button>
+                        </div>
+                        <div class="item" data-name="Coke" data-options='["Regular"]' data-price='{"Regular": 50}'>
+                            <img src="Assests/beverages.jpeg" alt="Coke" class="image">
+                            <p class="name">Coke</p>
+                            <select class="item-options">
+                                <option value="Regular">Regular - 50 INR</option>
+                            </select>
+                            <button class="add-to-order">Add to Order</button>
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                </div>
+                <div class="order">
+                    <h2>Current Order</h2>
+                    <form id="order-form">
+                        <label for="customer-name">Customer Name:</label>
+                        <input type="text" id="customer-name" name="customer-name" required>
+                        <table id="order-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Option</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Order items will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                        <div class="order-summary">
+                            <p>Total Amount: <span id="total-amount">0</span> INR</p>
+                            <button type="submit" id="place-order">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Review - Cafe ERP</title>
+    <link rel="stylesheet" href="css/review.css">
+</head>
+
+<body>
+        <div class="review-page">
+            <header>
+                <h1>Customer Review</h1>
+            </header>
+            <main>
+                <section class="review-form">
+                    <h2>We value your feedback!</h2>
+                    <form id="review-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Good</option>
+                            <option value="3">3 - Average</option>
+                            <option value="2">2 - Poor</option>
+                            <option value="1">1 - Terrible</option>
+                        </select>
+
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" required></textarea>
+
+                        <button type="submit">Submit Review</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    <script src="js/review.js"></script>
+</body>
+
+</html>

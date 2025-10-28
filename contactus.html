@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cafe ERP</title>
+    <link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+    <div class="dashboard">  
+        <div class="navbar">
+            <div class="logo">CafeERP</div>
+            <ul>
+                <li><a href="dashboard2.html" class="button">Home</a></li>
+                <li><a href="inventory2.html" class="button">Inventory Management</a></li>
+                <li><a href="order.html" class="button">Order Management</a></li>
+                <li><a href="staff_management.html" class="button">Staff Management</a></li>
+                <li><a href="billing.html" class="button">Billing & Payment</a></li>
+                <li><a href="crm.html" class="button">Customer CRM</a></li>
+                <li><a href="contactus.html" class="button">Contact us</a></li>
+            </ul>
+        </div>
+        <main class="main-content">
+            <header>
+                <h1>Contact Us</h1>
+            </header>
+        
+            
+                <section class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="submit_contact.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+                <section class="map">
+                    <h2>Find Us Here</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d231.60061010320365!2d72.15308267383293!3d21.756649509772693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5a71debc932f%3A0x559b68ba35316a59!2sSsccs%20(Shree%20Swaminarayan%20College%20Of%20Computer%20Science%20)!5e0!3m2!1sen!2sin!4v1737371721527!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+                </section>
+        </main>
+    </div>
+    <script src="js/contactus.js"></script>
+</body>
+</html>

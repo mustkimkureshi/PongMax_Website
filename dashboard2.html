@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe ERP Dashboard</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Side navbar  -->
+        <aside class="sidebar">
+            <div class="logo">Cafe ERP</div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard2.html" class="button">Home</a></li>
+                    <li><a href="inventory2.html" class="button">Inventory Management</a></li>
+                    <li><a href="order.html" class="button">Order Management</a></li>
+                    <li><a href="staff_management.html" class="button">Staff Management</a></li>
+                    <li><a href="billing.html" class="button">Billing & Payment</a></li>
+                    <li><a href="crm.html" class="button">Customer CRM</a></li>
+                    <li><a href="contactus.html" class="button">Contact us</a></li>
+                </ul>
+                <div class="footer">
+                    © 2024 Cafe ERP System by [MUSTKIM & MAYANK]
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Welcome to Cafe ERP</h1>
+                <div id="user-actions">
+                    <a href="signup.html"><button class="signup" id="signup-btn">SignUp</button></a>
+                    <a href="login.html"><button class="login" id="login-btn">LogIn</button></a>
+                </div>
+                <div id="profileBox" class="user-profile">
+                    <img src="Assests/USERLOGO.png" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-details">
+                        <p id="username"></p>
+                        <p id="email"></p>
+                        <button id="logoutBtn" class="logout-btn">Logout</button>
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+                <div class="best-selling">
+                    <h2>Best-Selling Items</h2>
+                    <div class="items">
+                        <img src="Assests/coffe.jpeg" alt="Coffee" class="image">
+                        <p class="name">COFFEE</p>
+                        <img src="Assests/sandwich.jpg" alt="Sandwich" class="image">
+                        <p class="name">SANDWICH</p>
+                        <img src="Assests/cake.jpeg" alt="Cake" class="image">
+                        <p class="name">CAKE</p>
+                        <img src="Assests/tea2.jpg" alt="Cake" class="image">
+                        <p class="name">TEA</p>
+                    </div>
+                </div>
+                <div class="main-con">
+                    <div class="previous">
+                        <div class="sales">LAST MONTH SALES</div>
+                        <div class="sales">276000 INR</div>
+                    </div>
+                    <div class="previous">
+                        <div class="profit">LAST MONTH PROFIT</div>
+                        <div class="profit">76000 INR</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/show_profile.js"></script>
+</body>
+
+</html>  

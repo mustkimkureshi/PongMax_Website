@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/forgot.css">
+    <title>forgot password</title>
+</head>
+<body>
+        <form id="forgot-form" action="php/forgot.php" method="post">
+            <div class="main">
+                <div class="head">
+                    <label><h2>Forgot password</h2></label><br>
+                </div>
+                <div class="username">
+                    <input type="text" name="username" placeholder="Enter username" required><br><br><br>
+                </div>
+                <div class="new">
+                    <input type="password" name="newpassword" placeholder="New password" required><br><bR><br>
+                </div>
+                <div class="confirm">
+                    <input type="password" name="confirmpassword" placeholder="confirm password" required><br><br><br>
+                </div>
+                <div class="btn-1">
+                    <button type="submit">Ok</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </div>
+        </form>
+
+        <script src="js/authentication.js"></script>
+
+</body>
+</html>
